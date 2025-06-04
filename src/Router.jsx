@@ -5,16 +5,22 @@ import Auth from './pages/Auth/Auth'
 import Payment from "./Pages/Payment/Payment";
 import Orders from "./Pages/Order/Orders";
 import Cart from "./pages/Cart/Cart"
+import Results from "./pages/Result/Results";
+
+
 
 function Routing() {
   return (
     <Router>
-      <Routes> 
+      <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/Auth" element={<Auth />} />
         <Route path="/payments" element={<Payment />} />
-         <Route path="/Orders" element={<Orders />} />
+        <Route path="/Orders" element={<Orders />} />
+
+        <Route path="/Category/:categoryName" element={<Results/>} />
         <Route path="/Cart" element={<Cart />} />
+        
       </Routes>
     </Router>
   );

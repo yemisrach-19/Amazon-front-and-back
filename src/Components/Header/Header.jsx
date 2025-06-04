@@ -21,7 +21,7 @@ const Header = () => {
             <div>
               <p>Deliver To</p>
               <h1>Ethiopia</h1>
-            </div>{" "}
+            </div>
           </div>
           <div className="nav-search">
             <div className="nav-search-category">
